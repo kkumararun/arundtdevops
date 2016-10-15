@@ -10,11 +10,13 @@
         http://www.springframework.org/schema/context/spring-context-3.2.xsd">
 
 
-	<bean id="HandlerMapping"
-		class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" />
+	<context:annotation-config/>
 
 	<!--it's say that scan all controller and use it -->
-	<context:component-scan base-package="myecomfrontend"></context:component-scan>
+	<context:component-scan base-package="myecomfrontend"/>
+
+	<!-- this tag is help to execute annotations -->
+	<mvc:annotation-driven />
 
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -31,8 +33,7 @@
 	<mvc:resources mapping="/resources/**" location="/resources/" />
 
 
-	<!-- this tag is help to execute annotations -->
-	<mvc:annotation-driven />
+
 
 
 </beans>
