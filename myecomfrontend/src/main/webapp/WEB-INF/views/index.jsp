@@ -81,7 +81,7 @@
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
-</div>
+</div>	
 
 <div class="col-sm-3">
 <div class="card">

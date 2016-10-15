@@ -8,7 +8,6 @@
   <name>myecomfrontend Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
-
   <dependencies>
  
   <dependency>
@@ -27,6 +26,7 @@
     <groupId>jstl</groupId>
     <artifactId>jstl</artifactId>
     <version>1.2</version>
+
 </dependency>
  
     <dependency>
@@ -37,6 +37,7 @@
     </dependency>
   </dependencies>
   <build>
+
   
    <plugins>
         <plugin>
