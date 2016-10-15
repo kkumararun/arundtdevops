@@ -1,8 +1,10 @@
-<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
+<%@include file="linking.jsp" %>
+
 <div class="container text-center">
     <hr />
   <hr>
     <div class="row">
+    <footer>
         <div class="col-lg-12">
             <ul class="nav nav-pills nav-justified">
                 <li><a href="/">© 2016 myE-com</a></li>
@@ -10,5 +12,6 @@
                 <li><a href="<c:url value="/contact"/>">Contact Us</a></li>
             </ul>
         </div>
+        </footer>
     </div>
 </div>

@@ -1,12 +1,10 @@
-<script
-	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c"%>
 
-<script src="resources/js/All_Product.js"></script>
+
 
 
 
 <%@include file="linking.jsp" %>
+
 <%@include file="header.jsp" %>
 
 
@@ -16,35 +14,47 @@
 
 
 		<div class="container">
-		<input type="text" class="form-control" placeholder="Search Product" ng-model="searchBox">
+		
+		<div class="form-group">
+      <div class="input-group">
+ <div class="input-group-addon"><i class="fa fa-search"></i></div>
+
+    		<input type="text" class="form-control" placeholder="Search Product" ng-init="searchBox ='${cat}'">
+</div>
+</div>
 
 			<table class="table table-bordered table-hover table-condensed cf table2">
 				<thead>
 					<tr>
-						<th>Sr. Number</th>
-						<th>Product Name</th>
+						<th >Sr. Number</th>
+						<th >Product <span class="fa fa-caret-down" ng-click="myDataSort('name')"></span><span  class="fa fa-caret-up"></span></th>
 						<th>Brand</th>
-						<th>Category</th>
+						<th>
+						Category 
+						 
+						<span class="fa fa-caret-down"></span>
+        <span  class="fa fa-caret-up"></span>
+						</th>
 						<th>Supplier</th>
 						<th>Action</th>
 
 					</tr>
 				</thead>
 				<tbody>
-					<tr ng-repeat="product in allProductData | filter:searchBox">
+					<tr ng-repeat="product in allProductData| orderBy:mydata | filter:searchBox">
 						<td>{{product.sno}}</td>
 						<td>{{product.name}}</td>
 						<td>{{product.brand}}</td>
-						<td>{{product.category}}</td>
+						<td>{{product.category}} </td>
 						<td>{{product.supplier}}</td>
 
 						<td><button ng-click="" class="glyphicon glyphicon-trash btn btn-danger"></button></td>
 					</tr>
 				</tbody>
 			</table>
-
+${cat}
 		</div>
-		{{msg}}
+		
 	</div>
 
 </div>

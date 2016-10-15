@@ -1,4 +1,5 @@
-<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %>
+<%@include file="linking.jsp" %>
+
 <nav class="navbar navbar-default">
   <div class="container-fluid">
    

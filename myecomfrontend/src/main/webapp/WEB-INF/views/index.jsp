@@ -14,7 +14,7 @@
   <div class="card-block">
     <h4 class="card-title">Beauty</h4>
     <p class="card-text">Skin Care, Make Up & More</p>
-    <a href="#" class="btn btn-primary">View</a>
+    <a href="<c:url value="/viewall/Beauty"/>">View</a>
   </div>
 </div>
 </div>

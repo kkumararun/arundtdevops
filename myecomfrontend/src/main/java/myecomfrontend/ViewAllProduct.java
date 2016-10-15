@@ -11,6 +11,7 @@ public class ViewAllProduct{
 	@RequestMapping(value={"/viewall/{productCat}"})
 	public ModelAndView viewAllProductsByCat(@PathVariable("productCat") String p){
 		ModelAndView modelAndView=new ModelAndView("viewall_product");
+		modelAndView.addObject("cat",""+p);
 		return modelAndView;
 		
 	}
@@ -19,6 +20,7 @@ public class ViewAllProduct{
 	@RequestMapping("/viewall")
 	public ModelAndView viewAllProducts(){
 		ModelAndView modelAndView=new ModelAndView("viewall_product");
+		
 		return modelAndView;
 		
 	}
