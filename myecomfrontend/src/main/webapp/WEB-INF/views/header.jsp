@@ -13,7 +13,7 @@
     
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
-    <li><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+    <li><a href="<c:url value="/welcome"/>"><span class="glyphicon glyphicon-home"></span>Home</a></li>
     
       <li class="active"><a href="<c:url value="/aboutUs"/>">About</a></li>
       

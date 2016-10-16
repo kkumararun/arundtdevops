@@ -35,5 +35,5 @@
          <a class="right carousel-control" data-target="#carousel-729274"  data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 				</div>
 			</div>
-
+</div>
 </div>

@@ -1,4 +1,4 @@
-<%@include file="linking.jsp" %>
+<%-- <%@include file="linking.jsp" %> --%>
 
 <div class="container text-center">
     <hr />

@@ -3,7 +3,7 @@
 
 
 
-<%@include file="linking.jsp" %>
+<%-- <%@include file="linking.jsp" %> --%>
 
 <%@include file="header.jsp" %>
 
@@ -19,7 +19,7 @@
       <div class="input-group">
  <div class="input-group-addon"><i class="fa fa-search"></i></div>
 
-    		<input type="text" class="form-control" placeholder="Search Product" ng-init="searchBox ='${cat}'">
+    		<input type="text" class="form-control" placeholder="Search Product" ng-init="searchBox ='${cat}'" ng-model="searchBox">
 </div>
 </div>
 
@@ -27,7 +27,7 @@
 				<thead>
 					<tr>
 						<th >Sr. Number</th>
-						<th >Product <span class="fa fa-caret-down" ng-click="myDataSort('name')"></span><span  class="fa fa-caret-up"></span></th>
+						<th >Product <span class="fa fa-caret-down" ng-click="myDataSort('productName')"></span><span  class="fa fa-caret-up"></span></th>
 						<th>Brand</th>
 						<th>
 						Category 
@@ -41,23 +41,23 @@
 					</tr>
 				</thead>
 				<tbody>
-					<tr ng-repeat="product in allProductData| orderBy:mydata | filter:searchBox">
+					<tr ng-repeat="product in allProductData | orderBy:mydata | filter:searchBox">
 						<td>{{product.sno}}</td>
-						<td>{{product.name}}</td>
-						<td>{{product.brand}}</td>
-						<td>{{product.category}} </td>
-						<td>{{product.supplier}}</td>
+						<td>{{product.productName}}</td>
+						<td>{{product.productBrand}}</td>
+						<td>{{product.productCategory}} </td>
+						<td>{{product.productSupplier}}</td>
 
 						<td><button ng-click="" class="glyphicon glyphicon-trash btn btn-danger"></button></td>
 					</tr>
 				</tbody>
 			</table>
-${cat}
+
 		</div>
 		
 	</div>
 
 </div>
 
-
+<sript src="resources/js/All_Product.js"></sript>
 <%@include file="footer.jsp" %>
