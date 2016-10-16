@@ -1,12 +1,13 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<jsp:include page="linking.jsp" />
+
 
 <jsp:include page="header.jsp" />
 
 <jsp:include page="bootstrapCarousle.jsp" />
 
 <br><br>
+<div class="container-fluid">
 <div class="row">
 <div class="col-sm-3">
 <div class="card">
@@ -54,13 +55,12 @@
 </div>
 </div>
 
-
 </div>
-
-
-
-
-<h2>${msg}</h2>
-
 <jsp:include page="footer.jsp" />
+
+
+
+
+
+
 

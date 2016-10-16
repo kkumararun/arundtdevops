@@ -8,8 +8,8 @@ public interface ProductDaoInterface {
 
 	public List<Product> getAllProduct();
 	public void updateProduct(Product p);
-	public void deleteProduct(int pid);
-	public Product getProduct(int pid);
+	public void deleteProduct(String pid);
+	public Product getProduct(String pid);
 	
 
 }

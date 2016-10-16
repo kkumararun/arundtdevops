@@ -1,5 +1,5 @@
 <jsp:include page="header.jsp" />
-<jsp:include page="linking.jsp" />
+
 
 <div class="container"> <!-- container start -->
 <div class="row"><!-- row Start -->

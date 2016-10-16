@@ -10,10 +10,12 @@ public class ViewAllProduct{
 	
 	@RequestMapping(value={"/viewall/{productCat}"})
 	public ModelAndView viewAllProductsByCat(@PathVariable("productCat") String p){
+
 		ModelAndView modelAndView=new ModelAndView("viewall_product");
-		modelAndView.addObject("cat",""+p);
-		return modelAndView;
+			modelAndView.addObject("cat",""+p);
+	
 		
+		return modelAndView;		
 	}
 	
 	
@@ -24,5 +26,26 @@ public class ViewAllProduct{
 		return modelAndView;
 		
 	}
+	
+	
+	@RequestMapping(value={"/viewbyproduct/{productCat}"})
+	public ModelAndView viewAllProductsByID(@PathVariable("productCat") String p){
 
+		ModelAndView modelAndView=new ModelAndView("ViewSingleProduct");
+			modelAndView.addObject("sno",""+p);
+		
+		return modelAndView;		
+	}
+
+	@RequestMapping(value={"/deletebyid/{productCat}"})
+	public ModelAndView deleteProductsByID(@PathVariable("productCat") String p){
+
+		ModelAndView modelAndView=new ModelAndView("viewall_product");
+			modelAndView.addObject("sno",""+p);
+		
+		return modelAndView;		
+	}
+
+	
+	
 }

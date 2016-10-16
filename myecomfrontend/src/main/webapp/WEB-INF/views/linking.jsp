@@ -4,7 +4,7 @@
 <c:set var="imgs" value="/resources/images" />
 <c:set var="btstrpcss" value="/resources/css" />
 <c:set var="btstrpjs" value="/resources/js" />
-
+<c:set var="btstrpimg" value="/resources/images/productimages" />
 
 <script src="<c:url value="${btstrpjs}/angular.js"/>"></script>
 <script src="<c:url value="${btstrpjs}/jquery.min.js"/>"></script>

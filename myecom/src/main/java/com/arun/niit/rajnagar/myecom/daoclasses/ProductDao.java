@@ -20,7 +20,7 @@ public class ProductDao implements ProductDaoInterface{
 		Product product= null;
 		{
 			product=new Product();
-		product.setSno(1);
+		product.setSno("P001");
 		product.setProductBrand("Amway");
 		product.setProductCategory("Beauty");
 		product.setProductName("any product name");
@@ -30,7 +30,7 @@ public class ProductDao implements ProductDaoInterface{
 		
 		
 		product=new Product();
-		product.setSno(3);
+		product.setSno("P005");
 		product.setProductBrand("Lakme");
 		product.setProductCategory("Personal Care");
 		product.setProductName("Vision Care");
@@ -50,13 +50,19 @@ public class ProductDao implements ProductDaoInterface{
 	}
 
 	@Override
-	public void deleteProduct(int pid) {
-		// TODO Auto-generated method stub
+	public void deleteProduct(String pid) {
 		
+		for(Product p:productList)
+		{
+			if(pid.equals(p.getSno()))
+			{
+				productList.remove(p);
+			}
+		}
 	}
 
 	@Override
-	public Product getProduct(int pid) {
+	public Product getProduct(String pid) {
 		// TODO Auto-generated method stub
 		return null;
 	}

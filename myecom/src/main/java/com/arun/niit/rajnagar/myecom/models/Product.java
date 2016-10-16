@@ -2,13 +2,14 @@ package com.arun.niit.rajnagar.myecom.models;
 
 public class Product {
 
-	private int sno,quantitiy;
-	private String productName,productBrand,productCategory,productSupplier;
+	private int quantitiy;
+	private String productName,productBrand,productCategory,productSupplier,sno;
 	
-	public int getSno() {
+	
+	public String getSno() {
 		return sno;
 	}
-	public void setSno(int sno) {
+	public void setSno(String sno) {
 		this.sno = sno;
 	}
 	public int getQuantitiy() {

@@ -1,4 +1,5 @@
-<%@include file="linking.jsp" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<jsp:include page="linking.jsp" />
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -18,11 +19,12 @@
       <li class="active"><a href="<c:url value="/aboutUs"/>">About</a></li>
       
      
-       <li><a href="#">Page 3</a></li>
+       
          <li><a href="<c:url value="/viewall"/>">View All Products</a></li> 
     </ul>
    
    <ul class="nav navbar-nav navbar-right">
+   <li><a href="<c:url value="/contact"/>">Reach Us</a></li>
    <li class="dropdown">
                    <a href="" class="dropdown-toggle" data-toggle="dropdown">Login<strong class="caret"></strong></a>
                   <ul class="dropdown-menu">

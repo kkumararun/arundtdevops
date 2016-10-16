@@ -1,8 +1,4 @@
 
-
-
-
-
 <%-- <%@include file="linking.jsp" %> --%>
 
 <%@include file="header.jsp" %>
@@ -32,8 +28,7 @@
 						<th>
 						Category 
 						 
-						<span class="fa fa-caret-down"></span>
-        <span  class="fa fa-caret-up"></span>
+						
 						</th>
 						<th>Supplier</th>
 						<th>Action</th>
@@ -48,7 +43,10 @@
 						<td>{{product.productCategory}} </td>
 						<td>{{product.productSupplier}}</td>
 
-						<td><button ng-click="" class="glyphicon glyphicon-trash btn btn-danger"></button></td>
+						<td> <a href="<c:url value="/viewbyproduct/{{product.sno}}"/>" class="btn btn-info">View</a></td>
+						<td> <a href="" class="btn btn-success">Add to Cart</a></td>
+						<td> <a href=""class="btn btn-warning">Update</a></td>
+						<td> <a href="<c:url value="/deletebyid/{{product.sno}}"/>" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a></td>
 					</tr>
 				</tbody>
 			</table>
