@@ -16,7 +16,7 @@
 
 	<!--it's say that scan all controller and use it -->
 	<context:component-scan base-package="myecomfrontend"/>
-	<context:component-scan base-package="com.arun.niit.rajnagar.myecom"/>
+	<context:component-scan base-package="myecom"/>
 	
 	<!-- if your backends project package is diffrent so add package -->
 	<bean id="viewResolver"

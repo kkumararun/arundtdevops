@@ -10,17 +10,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.arun.niit.rajnagar.myecom.daoclasses.ProductDao;
-import com.arun.niit.rajnagar.myecom.daoclasses.ProductDaoInterface;
-import com.arun.niit.rajnagar.myecom.models.Product;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import myecom.dao.ProductDAO;
+import myecom.models.Product;
 
 @Controller
 public class ProductController {
 
 	List<Product> product;
 	@Autowired
-ProductDaoInterface productDao;
+ProductDAO productDao;
 	
 	@RequestMapping("/allproduct")
 	public @ResponseBody List<Product> getAllProduct(){
@@ -29,12 +29,5 @@ ProductDaoInterface productDao;
 	}
 
 	
-	@RequestMapping("/deleteitem")
-	public @ResponseBody List<Product> deleteItem(){
-		productDao.deleteProduct("id");
-		product=productDao.getAllProduct();		
-		return product;
-		
-	}
 	
 }
