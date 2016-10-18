@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class ViewAllProduct{ 
+public class ViewAllProductController{ 
 	
 	@RequestMapping(value={"/viewall/{productCat}"})
 	public ModelAndView viewAllProductsByCat(@PathVariable("productCat") String p){

@@ -4,20 +4,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-
-
 @Controller
-public class Login {
+public class SignupController {
 
-	@RequestMapping(value={"/login"})
+	@RequestMapping(value={"/signup"})
 public ModelAndView login(){
 	
-	
-	ModelAndView model=new ModelAndView("login_page");
-//	model.addObject("IfClickedOnLogin",true);
-
-	
+	ModelAndView model=new ModelAndView("signup_page");
 	return model;
 }
 	
+
 }

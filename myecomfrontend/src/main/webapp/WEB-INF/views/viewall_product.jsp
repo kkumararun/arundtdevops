@@ -37,13 +37,13 @@
 				</thead>
 				<tbody>
 					<tr ng-repeat="product in allProductData | orderBy:mydata | filter:searchBox">
-						<td>{{product.sno}}</td>
+						<td>{{product.productId}}</td>
 						<td>{{product.productName}}</td>
 						<td>{{product.productBrand}}</td>
 						<td>{{product.productCategory}} </td>
 						<td>{{product.productSupplier}}</td>
 
-						<td> <a href="<c:url value="/viewbyproduct/{{product.sno}}"/>" class="btn btn-info">View</a></td>
+						<td> <a href="<c:url value="/viewbyproduct/{{product.productId}}"/>" class="btn btn-info">View</a></td>
 						<td> <a href="" class="btn btn-success">Add to Cart</a></td>
 						<td> <a href=""class="btn btn-warning">Update</a></td>
 						<td> <a href="<c:url value="/deletebyid/{{product.sno}}"/>" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></a></td>
