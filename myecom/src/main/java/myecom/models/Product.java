@@ -11,16 +11,17 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.id.UUIDGenerationStrategy;
+
+
 
 @Entity
 @Table(name="ProductData")
 public class Product {
 
 	@Id
-//	@GeneratedValue(strategy = GenerationType.AUTO)
-	@GenericGenerator(name = "uuid", strategy = "uuid2")
-		private String productId;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name="product_id")
+		private int productId;
 	
 	@NotNull
 	@Column(name="product_name")
@@ -34,13 +35,12 @@ public class Product {
 	@Column(name="product_category")
 	private String productCategory;
 
-	public String getProductId() {
-		
-		return "PID"+productId;//"PRID"+UUIDGenerationStrategy.randomUUID();//productId;
+	public int getProductId() {
+		return productId;//"PRID"+UUIDGenerationStrategy.randomUUID();//productId;
 		
 	}
 
-	public void setProductId(String productId) {
+	public void setProductId(int productId) {
 		this.productId = productId;
 	}
 
@@ -67,6 +67,8 @@ public class Product {
 	public void setProductCategory(String productCategory) {
 		this.productCategory = productCategory;
 	}
+	
+	
 
 	@Override
 	public String toString() {

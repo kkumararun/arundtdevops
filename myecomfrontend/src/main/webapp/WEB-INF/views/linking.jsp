@@ -10,7 +10,7 @@
 <script src="<c:url value="${btstrpjs}/jquery.min.js"/>"></script>
 <script src="<c:url value="${btstrpjs}/bootstrap.js"/>"></script>
 <script src="<c:url value="${btstrpjs}/All_Product.js"/>"></script>
-<script src="<c:url value="${btstrpjs}/angular-filter.min.js"/>"></script>
+<script src="<c:url value="${btstrpjs}/angular-filter.min.js"/>"></script> 
 
 <link rel="stylesheet"	href="<c:url value="${btstrpcss}/bootstrap.css"/>">
 <link rel="stylesheet"	href="<c:url value="${btstrpcss}/signup.css"/>">

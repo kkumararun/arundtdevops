@@ -31,4 +31,5 @@ public class LandingPageController {
 		return model;
 	}
 
+
 }

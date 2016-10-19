@@ -22,7 +22,6 @@ public class ViewAllProductController{
 	@RequestMapping("/viewall")
 	public ModelAndView viewAllProducts(){
 		ModelAndView modelAndView=new ModelAndView("viewall_product");
-		
 		return modelAndView;
 		
 	}
