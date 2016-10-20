@@ -36,14 +36,14 @@ public class ViewAllProductController{
 		return modelAndView;		
 	}
 
-	@RequestMapping(value={"/deletebyid/{productCat}"})
-	public ModelAndView deleteProductsByID(@PathVariable("productCat") String p){
-
-		ModelAndView modelAndView=new ModelAndView("viewall_product");
-			modelAndView.addObject("sno",""+p);
-		
-		return modelAndView;		
-	}
+//	@RequestMapping(value={"/deletebyid/{productCat}"})
+//	public ModelAndView deleteProductsByID(@PathVariable("productCat") String p){
+//
+//		ModelAndView modelAndView=new ModelAndView("viewall_product");
+//			modelAndView.addObject("sno",""+p);
+//		
+//		return modelAndView;		
+//	}
 
 	
 	

@@ -34,6 +34,17 @@
 	<!-- resources tag help to load static resources  -->
 	<mvc:resources mapping="/resources/**" location="/resources/" />
 
+<!-- Creating a been for multipart resolver for images -->
+
+<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+
+		 <!-- setting maximum upload size -->
+		<property name="maxUploadSize" value="900000" />
+
+	</bean>
+
+
 <!-- this tag is help to execute annotations -->
 	<mvc:annotation-driven />
 

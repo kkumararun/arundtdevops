@@ -20,7 +20,7 @@
 </div>
 
 <div class="col-sm-4">
-<img alt="" src="<c:url value="${img}/item1.jpg"/>"/>
+<img alt="" src="<c:url value="${bimg}/item1.jpg"/>"/>
 </div>
 
 <div class="col-sm-4">
